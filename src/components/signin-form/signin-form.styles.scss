@@ -1,0 +1,18 @@
+.sign-up-container {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+
+    h2 {
+        font-family: 'Roboto Condensed';
+        font-weight: 300;
+        margin: 10px 0;
+    }
+
+    form {
+        .multiple-button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
