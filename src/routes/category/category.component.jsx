@@ -1,4 +1,4 @@
-import './category.styles.scss'
+import { CategoryTitle, CategoryContainer } from './category.styles'
 
 import { useState, useEffect } from 'react'
 
@@ -20,8 +20,8 @@ const Category = () => {
 
 	return (
 		<>
-			<h2 className='category-title'>{category}</h2>
-			<div className='category-container'>
+			<CategoryTitle>{category}</CategoryTitle>
+			<CategoryContainer>
 				{products &&
 					products.map((product) => (
 						<ProductCard
@@ -29,7 +29,7 @@ const Category = () => {
 							product={product}
 						/>
 					))}
-			</div>
+			</CategoryContainer>
 		</>
 	)
 }

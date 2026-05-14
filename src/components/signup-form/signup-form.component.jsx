@@ -1,4 +1,4 @@
-import './signup-form.styles.scss'
+import { SignupContainer, Title } from './signup-form.styles'
 
 import { useState } from 'react'
 
@@ -59,8 +59,8 @@ const SignupForm = () => {
 	}
 
 	return (
-		<div className='sign-up-container'>
-			<h2>Don't have an account?</h2>
+		<SignupContainer>
+			<Title>Don't have an account?</Title>
 			<span>Sign up with your email and password</span>
 			<form onSubmit={handleSubmit}>
 				<FormInput
@@ -97,7 +97,7 @@ const SignupForm = () => {
 				/>
 				<Button type='submit'>Sign Up</Button>
 			</form>
-		</div>
+		</SignupContainer>
 	)
 }
 
